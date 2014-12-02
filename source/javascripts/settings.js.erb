@@ -9,7 +9,7 @@ var MEME_SETTINGS = {
   fontFamily: 'Helvetica Neue',
   // Font family options: set to empty array to disable font selector.
   // These options may also be formatted as {text:'Knockout', value:'"Knockout 28 B"'}.
-  fontFamilyOpts: ['Arial', 'Helvetica Neue', 'Comic Sans MS', 'Francois One', 'Stag Medium'],
+  fontFamilyOpts: ['Arial', 'Helvetica Neue', 'Comic Sans MS'],
   
   // Font size of main headline:
   fontSize: 24,
@@ -44,19 +44,18 @@ var MEME_SETTINGS = {
   textShadow: false, // Text shadow toggle.
   textShadowEdit: true, // Toggles text shadow control within the editor.
   watermarkAlpha: 1, // Opacity of watermark image.
-  watermarkMaxWidthRatio: 0.25, // Maximum allowed width of watermark (percentage of total canvas width).
+  watermarkMaxWidthRatio: 0.5, // Maximum allowed width of watermark (percentage of total canvas width).
 
   // Path to the watermark image source, or blank for no watermark:
   // Alternatively, use '<%= asset_data_uri("vox.png") %>' to populate the watermark with base64 data, avoiding Cross-Origin issues.
-  watermarkSrc: (localStorage && localStorage.getItem('meme_watermark')) || '<%= image_path("tampabaytimes-white.png") %>',
+  watermarkSrc: (localStorage && localStorage.getItem('meme_watermark')) || '<%= image_path("poynter.png") %>',
   
   // Watermark image options: set to empty array to disable watermark picker.
   // NOTE: only populate the "data" attributes with base64 data when concerned about Cross-Origin requests...
   // Otherwise, just leave "data" attributes blank and allow images to load from your server.
   watermarkOpts: [
-    {text: 'Tampa Bay Times', value: '<%= image_path("tampabaytimes-white.png") %>', data: '<%= asset_data_uri("tampabaytimes-white.png") %>'},
-    {text: 'tbt*', value: '<%= image_path("tbt-logo.png") %>', data: '<%= asset_data_uri("tbt-logo.png") %>'},
-    {text: 'tb-two*', value: '<%= image_path("tbtwo-logo.png") %>', data: '<%= asset_data_uri("tbtwo_logo.png") %>'}
+    {text: 'Poynter', value: '<%= image_path("poynter.png") %>', data: '<%= asset_data_uri("poynter.png") %>'},
+    {text: 'NewsU', value: '<%= image_path("poynter_nu.png") %>', data: '<%= asset_data_uri("poynter_nu.png") %>'}
   ],
 
   width: 755 // Canvas rendering width.
