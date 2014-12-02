@@ -1,0 +1,26 @@
+.m-meme {
+	padding-top:50px;
+}
+.masthead {
+	background-color: rgb(9,90,46);
+	padding:10px;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, rgb(9,90,40)), color-stop(1, rgb(6,56,28)) );
+	background:-moz-linear-gradient( center top, rgb(9,90,40) 5%, rgb(6,56,28) 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#095a28', endColorstr='#06381c');
+	z-index: 999;
+	width:100%;
+	position:absolute;
+	left:0;
+	top:0;
+}
+
+.logo {
+	height:25px;
+	float:left
+}
+
+@media only screen and (max-width:768px) {
+	.logo {
+		content: url('http://www.tampabay.com/specials/2014/graphics/tampabaytimesT.png');
+	}
+}
